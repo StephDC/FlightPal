@@ -1,0 +1,18 @@
+#pals table{
+	margin: 0 50px;
+	border-collapse: collapse;
+	border: solid 2px black;
+}
+#pals table th, #pals table td{
+	border: solid 1px black;
+	padding: 0.5em 2em;
+}
+#pallist a {
+	display: block;
+}
+#pallist a + div{
+	display: none;
+}
+#pallist a:hover + div{
+	display: block;
+}

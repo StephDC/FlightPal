@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Flight Pal Search</title>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<h1 id="t_1">Flight Pal Search</h1>
+		<main>
+			<p><span id="t_2">Entries we currently have: </span><span id="f_entry">Loading...</span></p>
+			<p id="t_3">Please use the following form to fill in your information.</p>
+			<label for="f_flightno" id="t_4">Flight No.</label>
+			<input type="text" id="f_flightno" list="flightlist" placeholder="AA001" />
+			<datalist id="flightlist"></datalist>
+			<br />
+			<label for="f_date" id="t_5">Date</label>
+			<input type="date" id="f_date" placeholder="2020-01-01" />
+			<br />
+			<button type="button" id="checkflight">Submit</button>
+			<article id="boardingpass">
+				<div><span id="b_airline"></span></div>
+				<div><span id="b_date"></span>FLIGHT<span id="b_flight"></div>
+				<div class="pi">SEQ:<span id="b_seq"></span></div>
+				<div class="pi">DEP:<span id="b_dep"></span><span id="b_deptime"></span></div>
+				<div class="pi">ARR:<span id="b_arr"></span><span id="b_arrtime"></span></div>
+			</article>
+			<article id="pi">
+				<h2 id="t_6">Please use the following form to enter your contact info.</h2>
+				<form action="/cgi-bin/flightpal.py" method="POST" id="p_form">
+					<input type="hidden" id="p_airline" name="airline" />
+					<input type="hidden" id="p_flightno" name="flightno" />
+					<input type="hidden" id="p_date" name="date" />
+					<label for="p_name" id="t_7">Name:</label><input type="text" id="p_name" name="name" /><br />
+					<label for="p_pass" id="t_8">Password:</label><input type="password" id="p_pass" name="password" /><br />
+					<label for="p_confirmpass" id="t_9">Confirm Password:</label><input type="password" id="p_confirmpass" /><br />
+					<label for="p_contact" id="t_10">Contact Info:</label><input type="text" id="p_contact" name="contact" /><br />
+					<label for="p_url" id="t_11">URL/QR Code:</label><input type="url" id="p_url" name="url" />(optional)<br />
+					<label for="p_qrcode" id="t_12">QR Code:</label><input type="file" id="p_qrcode" />(optional)<br />
+					<button type="button" id="p_submit">Submit</button>
+				</form>
+			</article>
+		</main>
+		<article id="jswarn">
+			<p>This page requires JavaScript to work.
+			Please enable JavaScript or use a browser that supports it.</p>
+		</article>
+		<script src="qr-scanner/qr-scanner.umd.min.js"></script>
+		<script src="main.js"></script>
+		<script src="translate.js"></script>
+		<footer>&copy; Copyleft <i>Staph. aureus</i>, 2020</footer>
+	</body>
+</html>

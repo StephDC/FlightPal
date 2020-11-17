@@ -1,0 +1,50 @@
+main{
+	display: none;
+	font-family: sans-serif;
+}
+main label{
+	display: inline-block;
+	width: 10em;
+}
+#boardingpass{
+	display: none;
+	margin: 50px;
+	padding: 25px;
+	border: 2px solid;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px gray;
+	font-family: monospace;
+}
+#boardingpass span{
+	display: inline-block;
+}
+#boardingpass #b_airline,#b_date,#b_flight{
+	font-size: 2.5em;
+}
+#boardingpass div:first-child{
+	margin-bottom: 1.5em;
+}
+#boardingpass .pi{
+	font-weight: bold;
+}
+#boardingpass #b_seq{
+	margin-top: 1em;
+}
+#boardingpass #b_date{
+	padding-right: 0.4em;
+}
+#boardingpass #b_flight{
+	padding-left: 0.4em;
+}
+#boardingpass #b_dep,#b_arr{
+	width: 15em;
+}
+#pi {
+	display: none;
+}
+#login {
+	display: none;
+}
+#pals {
+	display: none;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Flight Pal Search</title>
+		<link rel="stylesheet" href="../main.css" />
+		<link rel="stylesheet" href="main.css" />
+		<script src="../qrcode-generator/js/qrcode.js"></script>
+	</head>
+	<body>
+		<h1 id="t_1">Flight Pal Search</h1>
+		<main>
+			<p>Entries we currently have: <span id="f_entry">Loading...</span></p>
+			<article id="login">
+				<label for="f_user">Username:</label><input type="text" id="f_user" /><br />
+				<label for="f_pass">Password:</label><input type="password" id="f_pass" /><br />
+				<button type="button" id="f_login">Login</button>
+			</article>
+			<article id="boardingpass">
+				<div><span id="b_airline"></span></div>
+				<div><span id="b_date"></span>FLIGHT<span id="b_flight"></div>
+				<div class="pi">SEQ:<span id="b_seq"></span></div>
+				<div class="pi">DEP:<span id="b_dep"></span><span id="b_deptime"></span></div>
+				<div class="pi">ARR:<span id="b_arr"></span><span id="b_arrtime"></span></div>
+			</article>
+			<article id="pals">
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Contact</th>
+							<th>URL / Hover for QR</th>
+						</tr>
+					</thead>
+					<tbody id="pallist">
+					</tbody>
+				</table>
+				<p>Last Update: <span id="p_update">Loading...</span></p>
+				<p>If you want to change your information, please visit <a href="../">here</a> and use the same name and password. All other information will be replaced.</p>
+			</article>
+		</main>
+		<article id="jswarn">
+			<p>This page requires JavaScript to work.
+			Please enable JavaScript or use a browser that supports it.</p>
+		</article>
+		<script src="main.js"></script>
+		<footer>&copy; Copyleft <i>Staph. aureus</i>, 2020</footer>
+	</body>
+</html>

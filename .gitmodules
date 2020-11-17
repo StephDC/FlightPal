@@ -1,0 +1,6 @@
+[submodule "html/qr-scanner"]
+	path = html/qr-scanner
+	url = https://github.com/nimiq/qr-scanner
+[submodule "html/qrcode-generator"]
+	path = html/qrcode-generator
+	url = https://github.com/kazuhikoarase/qrcode-generator
